@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0"/>
+        <title>Shop|GEM&GLAMOUR LUXE</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            body {
+                background-color: navy;
+                color: white;
+                margin: 0;
+                padding: 0;
+                font-family: Arial,sans-serif;
+            }
+
+            h1, h2, h3, p {
+                text-align: center;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>GEM&GLAMOUR LUXE</h1>
+            <nav>
+                <ul>
+                    <li><a 
+                        href="index.html">Home</a></li>
+                        <li><a href="Shop.html">Shop</a></li>
+                        <li><a
+                        href="collections.html">Collections</a></li>
+                        <li><a
+                        href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="shop-section">
+            <h2>Shop All Products</h2>
+
+            <!--Perfume-->
+            <div class="product">
+                <img src="images/JVUD0510.JPG" alt="perfume" />
+                <h3>Cotton Candy</h3>
+                <p>NGN 25,000.00</p>
+                <p>size: 100ml</p>
+                <button
+                onclick="addToCart('perfume', 25000)">Add to Cart</button>
+            </div>
+
+            <!--Skincare-->
+            <div class="product">
+                <img src="images/XZVK3682.JPG" alt="Skincare" />
+                <h3>Face Fact Ceramide</h3>
+                <p>NGN 11,000.00</p>
+                <button
+            onclick="addToCart('skincare', 11000)">Add To Cart</button>
+            </div>
+
+            <!--Clothes-->
+            <div class="product">
+                <img src="images/WBJG5623.JPG" alt="Clothes" />
+                <h3>Baggy Jean</h3>
+                <p>NGN 18,000.00</p>
+                <button
+                onclick="addToCart('clothes', 18000)">Add to Cart</button>
+            </div>
+
+            <!--perfumes-->
+            <div class="products">
+                <img src="images/DFHZ8554.JPG" alt="Loafers" />
+                <h3>loafers</h3>
+                <p>NGN 40,000.00</p>
+                <button
+                onclick="addToCart('loafers', 40000)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="images/RKXT6875.JPG"
+                alt="perfume">
+                <h3>Lamsat harir</h3>
+                <p>NGN20,000</p>
+                <button
+                onclick="addToCart('Lamsat Harir',20000)">Add to Cart</button>
+            </div>
+        </section>
+
+        <script>
+            let cart =[];
+
+            function addToCart(name,price)  {
+        cart.push({name,price});
+        alert(name+"added to cart!");
+        console.log(cart);// for testing
+            }    
+        </script>
+
+        <footer>
+         <p> @2025 GEM&GLAMOUR LUXE</p>
+         </footer>
+    </body>
+</html>

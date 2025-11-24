@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GEM&GLAMOUR LUXE</title>
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+         <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial,sans -serif;
+                overflow-x: hidden;
+            }
+            /*Top nav*/
+            .top-bar {
+                background-color: navy;
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .search-bar input {
+                width: 80%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .menu-icon {
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            /*Sidebar*/
+            .sidebar {
+                width: 250px;
+                background: navy;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: -250px;
+                transition: left 0.3s ease;
+                padding: 20px;
+                box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+                z-index: 1000;
+            }
+
+            .sidebar.active {
+                left: 0;
+            }
+            .sidebar h3 {
+                margin-bottom: 0;
+                color: white;
+            }
+
+            .sidebar.a {
+                display: block;
+                margin-bottom: 15px;
+                color: black;
+                text-decoration: none;
+                font-size: 16px;
+            }
+
+        .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+            /* Overlay */
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.3);
+                display: none;
+                z-index: 999;
+            }
+
+            .overlay.active {
+                display: block;
+            }
+            /*Main Content placeholder*/
+            .content {
+                padding: 20px;
+            }
+            .content h1 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            .product {
+                border: 1px solid #ccc;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .product img {
+                width: 100%;
+                height: 120px;
+                object-fit: cover;
+            }
+
+            .top-header {
+                background-color: navy;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+            }
+
+            .logo {
+                font-size: 22px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+
+            .menu-icon {
+                font-size: 26px;
+                cursor: pointer;
+            }
+
+            .sidebar ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .sidebar ul li {
+                margin: 15px 0;
+            }
+
+            .sidebar ul li a {
+                color: white;
+                text-decoration: navajowhite;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header class="top-header">
+            <div
+        class="logo">GEM&GLAMOUR LUXE</div>
+        <div class="top-bar">
+            <div class="menu-icon"
+            onclick="toggleMenu()">&#9776;</div>
+            <div style="flex: 1; text-align: right;">
+                <input type="text"
+                id="searchInput"
+                placeholder="search Products..."
+                style="padding: 5px;">
+                <button
+                onclick="searchProduct()">&#128269;</button>
+                <button
+                onclick="goToCart()">&#128722</button>
+            </div>
+        </div>
+</header>
+
+ <div id="sidebar"
+ class="sidebar">
+    <ul>
+        <li><a
+        href="index.html">HOME</a></li>
+        <li><a
+        href="shop.html">SHOP</a></li>
+        <li><a
+        href="collections.html">COLLECTIONS</a></li>
+        <li><a
+        href="contact.html">CONTACT US</a></li>
+        <a href="checkout.html">Go to CartIcon</a><li>
+</ul>
+    </div>
+
+        <div class="overlay" id="overlay"
+        onclick="toggleMenu()"></div>
+
+        <div class="content">
+            <h1>Welcome to GEM&GLAMOUR LUXE</h1>
+            <h2>Your One-Stop Shop for Beauty&Style</h2>
+            <h3>Glow,Scent,Slay,Repeat; because Basic is not in Your DNA</h3>
+            <img src="images/UXCJ9667.JPG"
+            alt="Banner" style="width: 800px; max-height: 500px; object-view-box: calc();">
+        
+        
+            <h2>Best Selling Products</h2>
+            <div class="product-grid">
+            <div class="product">
+            <img src="images/GAEI3162.JPG" alt="Product1" style="width: 200px; height: 200px;" alt="Click to view">
+            <h3>Lattafa's Oud Mood</h3>
+                <p>Ous-heavy,spice,and drama. smells rich,lasts forever.Great Longetivity</p>
+            <h4>NGN26,000</h4>
+            <button
+            onclick="addToCart('Lattafa;s Oud mood',26000)">Add To Cart</button> 
+         </div>
+
+            <div class="product-grid">
+            <div class="product">
+            <img src="images/BXJG5250.JPG" alt="Product1" style="width: 200px; height: 200px;">
+            <h3>Temptation</h3>
+            <p>NGN5,000</p>
+            <button
+            onclick="addToCart('Temptation',5000)">Add To Cart</button> 
+          </div>
+
+            <div class="product-grid">
+            <div class="product">
+            <img src="images/TOZZ7045.JPG" alt="Product1" style="width: 200px; height: 200px;">
+            <h3>Storm Elixer Body Spray</h3>
+            <p>NGN4,000</p>
+            <button
+            onclick="addToCart('Storm Elixer Body spray',4000)">Add To Cart</button> 
+          </div>
+
+            <div class="product-grid">
+            <div class="product">
+            <img src="images/QJPY1931.JPG" alt="Product1" style="width: 200px; height: 200px;">
+            <h3>Riggs Body Spray</h3>
+            <h3>NGN4,000</h3>
+            <button
+            onclick="addToCart('Riggs Body Spray',4000)">Add To Cart</button> 
+        </div>
+
+            <div class="product-grid">
+            <div class="product">
+            <img src="images/FCIT6358.JPG" alt="Product1" style="width: 200px; height: 200px;">
+            <h3>Dove</h3>
+            <p>NGN6,500</p>
+            <button
+            onclick="addToCart('Dove',6500)">Add To Cart</button> 
+        </div>
+
+            <div class="product-grid">
+            <div class="product">
+            <img src="images/NRJF3644.JPG" alt="Product1" style="width: 200px; height: 200px;">
+            <h3>Body Mist</h3>
+            <p>NGN2,800</p>
+            <button
+            onclick="addToCart('Body Mist',2800)">Add To Cart</button> 
+        </div>
+
+        <h2>Loafers</h2>
+            <div class="product-grid">
+            <div class="product">
+            <img src="images/DFHZ8554.JPG" alt="Loaffers1" style="width: 200px; height: 200px;">
+            <h3>NGN40,000</h3>
+            <button
+            onclick="addToCart('Loafers2',40000)">Add To Cart</button> 
+        </div>
+
+        <h2>Loafers</h2>
+            <div class="product-grid">
+            <div class="product">
+            <img src="images/AUUG7908.JPG" alt="Product1" style="width: 200px; height: 200px;">
+            <h3>NGN45,000</h3>
+            <button
+            onclick="addToCart('Loafers2',45000)">Add To Cart</button> 
+        </div>
+
+<h2>Loafers</h2>
+            <div class="product-grid">
+            <div class="product">
+            <img src="images/PEOF8439.JPG" alt="Product1" style="width: 200px; height: 200px;">
+            <h3>NGN40,000</h3>
+            <button
+            onclick="addToCart('Loafers2',40000)">Add To Cart</button> 
+        </div>
+
+        <div id="productLists">
+            <div class="product">Loafers</div>
+        <div class="product">body mist</div>
+        <div class="product">Perfumes</div>
+</div>
+        <input type="text"
+        id="searchInput"
+        placeholder="search for a product...">
+        <button
+onclick="searchProduct()">&#128269</button>
+        
+        <script>
+           javascript
+            function toggleMenu() {
+
+                document.getElementById("sidebar").
+                classList.toggle("active"); 
+
+                document.getElementById("overlay").
+                classList.toggle("active");
+            }
+         
+
+         
+            function searchProduct() {
+                let input =
+                 document.getElementById("searchInput").
+                value.toLowerCase();
+                let products =
+                document.querySelectorAll(".product");
+                let found = false;
+                
+                products. forEach(function(product)  {
+                    if 
+                    (product.textContent.toLowerCase().includes(input)) {
+                        product.style.display =
+                        "block";
+                        found = true;
+                    } else {
+                        product.style.display =
+                        "none";
+                    }
+                });
+
+                if (!found) {
+                    alert("product not found");
+                }
+            }
+            
+
+
+            function goToCart() {
+                alert("Redirecting to your cart...");
+                // or use window.location.href = 'cart.html';
+            }
+
+            //ADD TO CART
+            function
+            addToCart(productname) {
+                let cart =
+                JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(ProductName);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(productName + "added to cart!");
+                //example: {naame: "body mist",price:2800, img: <img src="../images/NRJF3644.JPG"}
+                localStorage.setItem("cart", JSON.stringify(cart));
+            }
+
+
+            //VIEW CART (cart icon)
+            function goToCart() {
+                window.location.href = "chechout.html";
+            }
+    </script>
+                                    
+                 <script>
+                    //SEARCH FUNCTION
+                    function searchProduct() {
+                        const input =
+                        document.getElementById("searchInput").value.toLowerCase();
+                        const products = 
+                        document.querySelectorAll(".product");
+
+                        products.forEach(product => {
+                            const name = 
+                            product.getAttribute("data-name").to toLowerCase();
+                            product.style.display = 
+                            name.includes(input) ? "block": "none";
+                        });
+                    }
+
+                    //ADD TO CART FUNCTION
+                    function addToCart(name,price) {
+                        let cart = 
+                        JSON.parse(localStorage.getItem("cart")) || [];
+                        cart.push({name,price});
+                        localStorage.setItem("cart", JSON.stringify("cart"));
+                        alert(${name} added to cart!);
+                    }
+                 </script>                   
+    </body>
+</html>====

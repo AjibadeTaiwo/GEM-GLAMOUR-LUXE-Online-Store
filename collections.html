@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Collection-GEM&GLAMOUR LUXE</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            body {
+                background-color: navy;
+                color: white;
+                margin: 0;
+                padding: 20px;
+                font-family: Arial, sans-serif;
+            }
+
+
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: navy;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidebar a:hover{
+    background-color: #4444;
+}
+
+.open-btn {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px 15px;
+     color: white;
+     background-color: navy;
+     border: none;
+}
+
+.main-content {
+    padding: 20px;
+}
+            h1  {
+                text-align: center;
+                margin-top: 40px;
+                border-bottom: 2px solid white;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+            }
+
+            .category {
+                margin-bottom: 40px;
+            }
+
+            .category h2 {
+                border-bottom: 2px solid white;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+            }
+
+            .items {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .item {
+                background-color: white;
+                color: navy;
+                padding: 15px;
+                border-radius: 8px;
+                width: 200px;text-align: center;
+            }
+
+            .item img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 6px;
+                margin-bottom: 10px;
+            }
+
+            .item button {
+                background-color: navy;
+                color: white;
+                border: none;
+                padding: 8px 12px;
+                cursor: pointer;
+                border-radius: 4px;
+                margin-top: 10px;
+            }
+
+            .item button:hover {
+                background-color: #000066;
+            }
+            .catrgory img {
+                width: 100%;
+                height: 500px;
+                object-fit: contain;
+            }
+        </style> 
+    </head>
+    <body>
+        
+    
+        <nav>
+            
+            <nav>
+                <ul>
+                    <li><a 
+                        href="index.html">Home</a></li>
+                        <li><a href="Shop.html">Shop</a></li>
+                        <li><a
+                        href="collections.html">Collections</a></li>
+                        <li><a
+                        href="contact.html">Contact</a></li>
+                        <a href="checkout.html">Checkout</a><li>
+
+        <!--Open menu button-->
+        <button  class="open-btn"
+        onclick="openSidebar()">
+        &#9776; <!--This is the hamburger icon-->
+                        </button>
+
+<!--perfumes Secions-->
+<section id="perfumes">
+    <h2>Perfumes</h2>
+</section>
+
+<!--Skincare Secions-->
+<section id="skincare">
+    <h2>Skincare</h2>
+</section>
+
+<!--Clothes Secions-->
+<section id="clothes">
+    <h2>Clothes</h2>
+</section>
+
+<!--Accessories Secions-->
+<section id="Accessories">
+    <h2>Accessories</h2>
+</section>
+
+<!-- Hair Secions-->
+<section id="Hairs">
+    <h2>Hairs</h2>
+</section>
+</body>
+</html>
+        <nav>
+            <ul>
+                <h1>Our Collections</h1>
+                <div class="category">
+                    <h2>Perfumes</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/RKXT6875.JPG"
+                            alt="Perfume" style="width:200px; height: 200px;">
+                            <p>Lamsat Harir</p>
+                            <p>NGN20,000</p>
+                            <button
+                            onclick="addToCart('Perfume1',20000,'../images/RKXT6875.JPG')">Add To Cart</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </ul>
+        </nav>
+
+        
+                            <div class="category">
+                    <h2>Perfumes</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/JVUD0510.JPG"
+                            alt="perfume" style="width:200px; height: 200px;">
+                            <p>Cotton Candy</p>
+                            <p>NGN25,000</p>
+                            <button
+                            onclick="addToCart('Perfume2',25000)">Add To Cart</button> 
+                            </div>
+
+                                    <div class="category">
+                    <h2>Perfumes</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/AGXX2666.JPG"
+                            alt="perfume"  style="width:200px; height: 250px;">
+                            <p>Lataffa pride</p>
+                            <p>NGN50,000</p>
+                            <button
+                            onclick="addToCart('Perfume3',50000)">Add To Cart</button> 
+                            </div>
+
+               <div class="category">
+                    <h2>Perfumes</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/VNHJ5846.JPG"
+                            alt="perfume"  style="width:200px; height: 200px;">
+                            <p>Viking</p>
+                            <p>NGN30,000</p>
+                            <button
+                            onclick="addToCart('Perfume4',30000)">Add To Cart</button> 
+                        </div>       
+
+                            
+                           <div class="category">
+                    <h2>Perfumes</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/CLXN0898.JPG"
+                            alt="perfume"  style="width:200px; height: 250px;">
+                            <p>Black Sense</p>
+                            <p>NGN16,000</p>
+                            <button
+                            onclick="addToCart('Perfume5',16000)">Add To Cart</button> 
+                            </div>     
+
+                            
+                           <div class="category">
+                    <h2>Perfumes</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/KDEW3206.JPG"
+                            alt="perfume"  style="width:200px; height: 200px;">
+                            <p>Yara mini Perfume</p>
+                            <p>NGN5000</p>
+                            <button
+                            onclick="addToCart('Perfume6',5000)">Add To Cart</button> 
+                            </div>    
+
+                          <div class="category">
+                    <h2>Perfumes</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/VXGR6162.JPG"
+                            alt="perfume"  style="width:200px; height: 200px;">
+                            <p>Ashantee Perfume</p>
+                            <p>NGN5000</p>
+                            <button
+                            onclick="addToCart('Perfume7',5000)">Add To Cart</button> 
+                            </div>
+                            
+                         <div class="category">
+                    <h2>Perfumes</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/RHIQ7626.JPG"
+                            alt="perfume" style="width:200px; height: 200px;">
+                            <p>Escape Perfume</p>
+                            <p>NGN4,500</p>
+                            <button
+                            onclick="addToCart('Perfume8',4500)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                    <h2>Perfumes</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/DPSS5686.JPG"
+                            alt="perfume"  style="width:200px; height: 200px;">
+                            <p>Yara Perfume</p>
+                            <p>NGN14,000</p>
+                            <button
+                            onclick="addToCart('Perfume9',14000)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                    <h2>Perfumes</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/LFRT3968.JPG"
+                            alt="perfume"  style="width:200px; height: 250px;">
+                            <p>9PM</p>
+                            <p>NGN13,000</p>
+                            <button
+                            onclick="addToCart('Perfume10',13000)">Add To Cart</button> 
+                        </div>
+
+                       <div class="category">
+                        <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/ADMN6617.JPG"
+                                alt="Skincare"  style="width:200px; height: 250px;">
+                                <p>Glow Booster lightening oil</p>
+                                <p>NGN10,000</p>
+                                <button
+                                onclick="addToCart('Skincare1',10000)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                        <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/IVBC3600.JPG"
+                                alt="Skincare"  style="width:200px; height: 200px;">
+                                <p>Olay body lotion</p>
+                                <p>NGN23,000</p>
+                                <button
+                                onclick="addToCart('Skincare2',23000)">Add To Cart</button> 
+                            </div>
+
+                        <div class="category">
+                        <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/XZVK3682.JPG"
+                                alt="Skincare"  style="width:200px; height: 200px;">
+                                <p>Ceramide Cleanser</p>
+                                <p>NGN10,500</p>
+                                <button
+                                onclick="addToCart('Skincare3',10500)">Add To Cart</button> 
+                            </div>
+
+                    <div class="category">
+                        <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/XDZX8612.JPG"
+                                alt="Skincare"  style="width:200px; height: 200px;">
+                                <p>Pears Body lotion</p>
+                                <p>NGN3000</p>
+                                <button
+                                onclick="addToCart('Skincare4',3000)">Add To Cart</button> 
+                            </div>
+
+                    <div class="category">
+                        <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/DVXT7474.JPG"
+                                alt="Skincare"  style="width:200px; height: 200px;">
+                                <p>Facial Mask</p>
+                                <p>NGN3000</p>
+                                <button
+                                onclick="addToCart('Skincare5',3000)">Add To Cart</button> 
+                            </div>
+
+                    
+                        <div class="category">
+                            <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/PMOQ4973.JPG"
+                                alt="Skincare"  style="width:200px; height: 250px;">
+                                <p>Alpha Arbutin</p>
+                                <p>NGN6,500</p>
+                                <button
+                                onclick="addToCart('Skincare6',6500)">Add To Cart</button> 
+                            </div>
+
+                    <div class="category">
+                        <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/ICED3146.JPG"
+                                alt="Skincare"  style="width:200px; height: 200px;">
+                                <p>St lves body wash</p>
+                                <p>NGN11,000</p>
+                                <button
+                                onclick="addToCart('Skincare7',11000)">Add To Cart</button> 
+                            </div>
+
+                    
+                        <div class="category">
+                            <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/MQDX2887.JPG"
+                                alt="Skincare"  style="width:200px; height: 200px;">
+                                <p>Tea Tree Facial scrub</p>
+                                <p>NGN5000</p>
+                                <button
+                                onclick="addToCart('Skincare8',5000)">Add To Cart</button> 
+                            </div>
+
+                    <div class="category">
+                        <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/XEHQ2889.JPG"
+                                alt="Skincare"  style="width:200px; height: 200px;">
+                                <p>Foaming Face wash</p>
+                                <p>NGN5000</p>
+                                <button
+                                onclick="addToCart('Skincare9',5000)">Add To Cart</button> 
+                            </div>
+
+                    
+                        <div class="category">
+                            <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/DMWX8417.JPG"
+                                alt="Skincare"  style="width:200px; height: 200px;">
+                                <p>Fems Fresh Feminine Wash</p> 
+                                <p>NGN6000</p>
+                                <button
+                                onclick="addToCart('Skincare10',6000)">Add To Cart</button> 
+                            </div>
+
+                     <div class="category">
+                        <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/HKRI7331.JPG"
+                                alt="Skincare"  style="width:200px; height: 200px;">
+                                <p>Esterlin Rosehip Niacinamide</p>
+                                <p>NGN5000</p>
+                                <button
+                                onclick="addToCart('Skincare11',5000)">Add To Cart</button> 
+                            </div>
+
+                    
+                        <div class="category">
+                            <h2>Skincare</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/VIMO1611.JPG"
+                                alt="Skincare" style="width:200px; height: 200px;">
+                                <p>Biore UV Sunscreen</p> 
+                                <p>NGN6000</p>
+                                <button
+                                onclick="addToCart('Skincare12',6000)">Add To Cart</button> 
+                       </div>
+                       </div>
+                       </div>
+
+                       <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/UKMU4909.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>vintage shirt</p>
+                                <p>NGN8,500</p>
+                                <button
+                                onclick="addToCart('Clothes1',8500)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/AYTO4050.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>vintage shirt</p>
+                                <p>NGN8,500</p>
+                                <button
+                                onclick="addToCart('Clothes2',85000)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/NGBA9004.JPG"
+                                alt="Clothes"  style="width:200px; height: 250px;">
+                                <p>Roundneck</p>
+                                <p>NGN11,000</p>
+                                <button
+                         onclick="addToCart('Clothes3',11000)">Add To Cart</button> 
+                            </div>       
+
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/TWFZ7327.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Roundneck</p>
+                                <p>NGN11,000</p>
+                                <button
+                                onclick="addToCart('Clothes4',11000)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/KDNC5700.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Roundneck</p>
+                                <p>NGN11,000</p>
+                                <button
+                                onclick="addToCart('Clothes5',11000)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/XEEC6404.JPG"
+                                alt="Clothes" style="width:200px; height: 250px;">
+                                <p>Luxury up and Down</p>
+                                <p>NGN17,000</p>
+                                <button
+                                onclick="addToCart('Clothes6',17000)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/AZCB2185.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Luxury up an down </p>
+                                <p>NGN15,000</p>
+                                <button
+                                onclick="addToCart('Clothes7',15000)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/WMPZ6580.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Condom boxer 3in1</p>
+                                <p>NGN5,500</p>
+                                <button
+                                onclick="addToCart('Clothes8',5500)">Add To Cart</button> 
+                            </div>
+
+                            |<div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/JVNY7384.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Corporate shirt available in colors</p>
+                                <p>NGN7,000</p>
+                                <button
+                                onclick="addToCart('clothes9',7000)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/WBJG5623.JPG"
+                                alt="Clothes"  style="width:200px; height: 250px;">
+                                <p>Baggy Jean</p>
+                                <p>NGN18,000</p>
+                                <button
+                                onclick="addToCart('clothes10',18000)">Add To Cart</button> 
+                            </div>
+
+
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/SIXG7359.JPG"
+                                alt="Clothes"  style="width:200px; height: 250px;">
+                                <p>Baggy Jean</p>
+                                <p>NGN18,000</p>
+                                <button
+                                onclick="addToCart('Clothes11',18000)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                        <h2>Fashio0n</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/EZEI0575.JPG"
+                                alt="fashion" style="width:200px; height: 200px;">
+                                <p>Heels</p>
+                                <p>NGN24,500</p>
+                                <button
+                                onclick="addToCart('Heels',24500)">Add To Cart</button> 
+                            </div>
+
+                            <div class="category">
+                        <h2>Fashion</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/PEOF8439.JPG"
+                                alt="Fashion"  style="width:200px; height: 200px;">
+                                <p>Loafers male</p>
+                                <p>NGN40,000</p>
+                                <button
+                                onclick="addToCart('Loafers male',40000)">Add To Cart</button> 
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Fashion</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/DPCI5695.JPG"
+                                alt="Fashion"  style="width:200px; height: 200px;">
+                                <p>Loafers male</p>
+                                <p>NGN39,000</p>
+                                <button
+                                onclick="addToCart('Loafers Male',39000)">Add To Cart</button> 
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/TPRV6045.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Loafers</p>
+                                <p>NGN42,000</p>
+                                <button
+                                onclick="addToCart('Loafers14',42000)">Add To Cart</button> 
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/AUUG7908.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Loafers</p>
+                                <p>NGN45,000</p>
+                                <button
+                                onclick="addToCart('Loafers15',45000)">Add To Cart</button> 
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/OGNH8170.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Loafers</p>
+                                <p>NGN45,000</p>
+                                <button
+                                onclick="addToCart('Clothes16',45000)">Add To Cart</button> 
+                            </div>
+
+                    
+
+                            
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/DFHZ8554.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Loafers</p>
+                                <p>NGN40,000</p>
+                                <button
+                                onclick="addToCart('Loafers',40000)">Add To Cart</button> 
+                            </div>
+
+
+
+                            
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/TEYM3364.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Loafers</p>
+                                <p>NGN42,000</p>
+                                <button
+                                onclick="addToCart('Loafers18',42000)">Add To Cart</button> 
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/AZXW8991.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Slide</p>
+                                <p>NGN25,500</p>
+                                <button
+                                onclick="addToCart('Slide19',25500)">Add To Cart</button> 
+                            </div>
+
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/BMSM4978.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Slides</p>
+                                <p>NGN25,500</p>
+                                <button
+                                onclick="addToCart('Slides20',25500)">Add To Cart</button> 
+                            </div>
+
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Clothes</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/TYID0311.JPG"
+                                alt="Clothes"  style="width:200px; height: 200px;">
+                                <p>Slides</p>
+                                <p>NGN25,500</p>
+                                <button
+                                onclick="addToCart('clothes21',25500)">Add To Cart</button> 
+                            </div>
+
+                            </div>
+                            </div>
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Accessories</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/ALDE4541.JPG"
+                                alt="accessories"  style="width:200px; height: 200px;">
+                                <p>Necklace</p>
+                                <p>NGN5,500</p>
+                                <button
+                                onclick="addToCart('accessories1',5500)">Add To Cart</button> 
+                            </div>
+
+                        
+
+                            
+                            <div class="category">
+                        <h2>Accessories</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/UVZL5272.JPG"
+                                alt="accessories"  style="width:200px; height: 200px;">
+                                <p>Necklace</p>
+                                <p>NGN5,500</p>
+                                <button
+                                onclick="addToCart('accessories2',5500)">Add To Cart</button> 
+                            </div>
+
+                            
+
+                            <div class="category">
+                        <h2>Accessories</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/PIXS8402.JPG"
+                                alt="accessories"  style="width:200px; height: 200px;">
+                                <p>Necklace</p>
+                                <p>NGN7,500</p> 
+                                <button
+                                onclick="addToCart('accessories3',7500)">Add To Cart</button> 
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Accessories</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/WHOC5880.JPG"
+                                alt="accessories"  style="width:200px; height: 200px;">
+                                <p>Necklace</p>
+                                <p>NGN2,500</p>
+                                <button
+                                onclick="addToCart('accessories4',2500)">Add To Cart</button> 
+                            </div>
+
+                            
+
+                                <div class="category">
+                        <h2>Accessories</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/FCNN6234.JPG"
+                                alt="accessories"  style="width:200px; height: 200px;">
+                                <p>Necklace</p>
+                                <p>NGN2,500</p>
+                                <button
+                        onclick="addToCart('accessories5',2500)">Add To Cart</button> 
+                            </div>
+
+                            </div>
+                            </div>
+
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Accessories</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/DDZH1483.JPG"
+                                alt="accessories"  style="width:200px; height: 200px;">
+                                <p>Bracelet</p>
+                                <p>NGN6,000</p>
+                                <button
+                                onclick="addToCart('accessories6',6500)">Add To Cart</button> 
+                            </div>
+ 
+                            </div>
+
+
+                                <div class="category">
+                        <h2>Accessories</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/KDBP9251.JPG"
+                                alt="accessories"  style="width:200px; height: 200px;">
+                                <p>Bracelet</p>
+                                <p>NGN3,500</p>
+                                <button
+                                onclick="addToCart('accessories7',3500)">Add To Cart</button> 
+                            </div>
+
+                            
+                                <div class="category">
+                        <h2>Accessories</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/UGOZ9992.JPG"
+                                alt="accessories"  style="width:200px; height: 200px;">
+                                <p>Bracelet</p>
+                                <p>NGN3,500</p>
+                                <button
+                                onclick="addToCart('accessories7',3500)">Add To Cart</button> 
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Accessories</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/VZIB0646.JPG"
+                                alt="accessories"  style="width:200px; height: 200px;">
+                                <p>Bracelet&Earrings</p>
+                                <p>NGN6000</p>
+                                <button
+                                onclick="addToCart('accessories8',6000)">Add To Cart</button> 
+                                </div>
+                                </div>
+                                </div>
+
+
+                                <div class="category">
+                        <h2>Hairs</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/CYPX2859.JPG"
+                                alt="hairs"  style="width:200px; height: 200px;">
+                                <p>Full Frontal Tiwa Wig
+                                    Human hair</p>
+                                <p>NGN35,000</p>
+                                <button
+                                onclick="addToCart('hairs1',35000)">Add To Cart</button> 
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Hairs</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/XMSW6657.JPG"
+                                alt="hairs"  style="width:200px; height: 250px;">
+                                <p></p>
+                                <p>NGN45,000</p>
+                                <button
+                                onclick="addToCart('hairs2',45000)">Add To Cart</button> 
+                                </div>
+
+                                   <div class="category">
+                        <h2>Hairs</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/MXAO4837.JPG"
+                                alt="hairs"  style="width:200px; height: 200px;">
+                                <p></p>
+                                <p>NGN40,000</p>
+                                <button
+                                onclick="addToCart('hairs3',40000)">Add To Cart</button> 
+                            </div>
+
+                            
+                            <div class="category">
+                        <h2>Hairs</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/MRTD0630.JPG"
+                                alt="hairs"  style="width:200px; height: 200px;">
+                                <p></p>
+                                <p>NGN38,000</p>
+                                <button
+                                onclick="addToCart('hairs4',38000)">Add To Cart</button> 
+                                </div>
+
+                                   <div class="category">
+                        <h2>Hairs</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/NCXP7598.JPG"
+                                alt="hairs"  style="width:200px; height: 200px;">
+                                <p></p>
+                                <p>NGN38,000</p>
+                                <button
+                                onclick="addToCart('hairs5',38000)">Add To Cart</button> 
+                                </div>
+            
+    
+              <script>                              
+            let cart = []
+
+            function addToCart(name,price)  {
+        cart.push({name,price});
+        alert(name+"added to cart!");
+        console.log(cart);// for testing
+            }    
+
+        </script>
+
+        <header>
+            <h1>Our Collecctions</h1>
+            <p>Explore the GEM&GLAMOUR LUXE World where Fragrance meets Glow, and Style Speaks Without Words.</p>
+        </header>
+
+        <section class="collections">
+            <div class="Collection-item">
+                <img src="images/LFRT3968.JPG"
+                 alt="product image">
+                <img src="images/LFRT3968.jpg"
+                 alt="perfume image 2">
+                <img src="images/perfume" alt="perfume 3">
+                <img src="images/VNHJ5846.JPG" alt="perfume 4">
+</div>
+
+            <div class="collection-item">
+                <img src="images/PMOQ4973.JPG" alt="Skincare 1">
+                <img src="images/VIMO1611.JPG" alt="skincare 2">
+            <h2>Skincare</h2>
+            </div>
+
+            <div class="collection-item">
+                <img src="images/UKMU4909.JPG" alt="Clothes1">
+                <img src="images/TWFZ7327.JPG" alt="clothes 2">
+                <h2>Clothes</h2>
+             </div>
+
+             <div class="collection-item">
+                <img src="images/TPRV6045.JPG " alt="Shoes 1">
+                <img src="images/PEOF8439.JPG" alt="shoes 2">
+                <h2>Shoes</h2>
+             </div>
+
+             <div class="collection-item">
+            <img src="images/NCXP7598.JPG" alt="Hair 1">
+            <img src="images/CYPX2859.JPG" alt="Hair">
+            <h2>Bags</h2>
+             </div>
+
+             <div class="collection-item">
+                <img src="images/PIXS8402.JPG" alt="Necklace 1">
+                <img src="images/KDBP9251.JPG" alt="Necklace 2">
+                <h2>Necklace</h2>
+             </div>
+        </section>
+
+
+                                <script>
+                                    let  cart = [];
+
+                                  function addToCart(itemName,itemPrice, image)  {
+                                    let cart =
+                                    JSON.parse(localStorage.getItem('cart')) || [];
+                                    cart.push({name: itemName, price: itemPrice, image: image});
+                                    localStorage.setItem('cart', JSON.stringify(cart));
+                                    alert(itemName +"has been added to cart.");
+                                  }
+                                    </script>
+                                    
+                                    
+    </body>
+</html>
